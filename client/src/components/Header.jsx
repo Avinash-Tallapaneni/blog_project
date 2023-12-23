@@ -10,6 +10,7 @@ const Header = ({ getRole }) => {
   let logoutHandler = () => {
     localStorage.clear();
     window.location.reload();
+    window.location.href = "/"
   };
 
   return (
