@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  @apply bg-slate-100;
+}
+
+.alice-carousel {
+  position: relative;
+}
+.alice-carousel__dots {
+  margin: 0;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.alice-carousel__dots-item:not(.__custom) {
+  background-color: #a1bde9;
+}
+
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #3b82f6;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0;
+}
+
+.alice-carousel__next-btn {
+  right: 0;
+}
+
+.blog ul {
+  @apply list-disc pl-5;
+}
+.blog ol {
+  @apply list-decimal pl-5;
+}
